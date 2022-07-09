@@ -1,0 +1,249 @@
+/* *{margin: 0 auto;} */
+Nav {
+  font-size: 20px;
+  font-weight: bold;
+  border-end-end-radius: 35px;
+  -webkit-border-end-end-radius: 35px;
+  box-shadow: 3px 3px 10px rgba(236, 233, 233, 0.9);
+  -webkit-box-shadow: 3px 3px 10px rgba(236, 233, 233, 0.9);
+  padding-right: -70px;
+}
+
+/* .nav-link{
+  /* background-color: rgb(157, 167, 160);
+  opacity: 0.1; */
+/* border: 1px red solid; */
+
+span.linke {
+  margin-left: auto;
+  margin-right: 0px;
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  border: 2px solid none;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 5px;
+  box-shadow: 5px 3px 10px rgba(236, 233, 233, 0.9);
+  clip-path: inset(-10px 0px -15px -10px);
+  padding-left: 10px;
+  color: #0275d8;
+}
+
+@media only screen and (min-width: 768px) {
+  span.linke {
+    box-shadow: none;
+    border: 2px solid none;
+    box-shadow: 5px 5px 10px rgba(236, 233, 233, 0.9);
+    clip-path: inset(-10px -10px -15px -10px);
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 0px 5px 0px 5px;
+    color: #0275d8;
+  }
+}
+
+span.linkz {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+  span.linkz {
+    box-shadow: none;
+  }
+}
+
+span.linke:hover {
+  font-size: 21px;
+}
+
+#font {
+  color: #0275d8;
+}
+
+#font:hover {
+  color: hsla(240, 100%, 60%, 0.7);
+}
+
+#brand {
+  font-size: 27px;
+  font-weight: 900;
+  font-style: italic;
+  border-radius: 400px;
+  border: 2px solid none;
+  padding: 0px 35px;
+  background-color: #0275d8;
+  color: white;
+  box-shadow: 5px 3px 25px rgba(231, 220, 220, 0.9);
+  font-family: 'Brush Script MT', cursive;
+}
+
+#brand:hover {
+  font-size: 27px;
+  background-color: white;
+  color: #0275d8
+}
+
+@media only screen and (min-width: 1200px) {
+  #brand {
+    margin-left: -40px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  #brand {
+    margin-left: -70px;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  #brand {
+    margin-left: -100px;
+  }
+}
+
+.nav-link {
+  text-align: right;
+}
+
+@media only screen and (min-width: 1100px) {
+  span.linke {
+    margin-left: 30px;
+    padding: 0px 8px 0px 8px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  span.linke {
+    margin-left: 40px;
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  span.linke {
+    margin-left: 50px;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+div.nav {
+  padding-top: 15px;
+ /* padding-left: 2px; */
+}
+
+button.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+.demo {
+  font-size: 15px;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 95%;
+}
+
+input.sc,
+input:focus {
+  border: 2px #0275d8 solid;
+  border-style: none none solid;
+  width: 150%;
+  outline: none;
+  margin: 10px 0;
+  background-color: transparent;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  input.sc,
+  input:focus {
+    width: 115%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  input.sc,
+  input:focus {
+    width: 160%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  input.sc,
+  input:focus {
+    width: 190%;
+  }
+}
+
+* {
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: cursive;  */
+
+}
+
+/* h1 {
+  font-size: larger;
+} */
+
+textarea {
+  border: 2px #0275d8 solid;
+  border-style: none none solid;
+  height: 150px;
+  width: 160%;
+  outline: none;
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  textarea {
+    width: 125%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  textarea {
+    width: 180%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  textarea {
+    width: 210%;
+  }
+}
+
+span.mode {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  z-index: 1;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+span.arrowup {
+  position: fixed;
+  bottom: 30px;
+  right: 14px;
+  z-index: 1;
+  background-color: rgb(0, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  padding: 2px;
+}
+

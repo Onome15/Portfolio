@@ -1,0 +1,50 @@
+.bg {
+    padding-bottom: 1px;
+    position: relative;
+   margin-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.bg::after {
+    background-color: turquoise;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    -webkit-clip-path: polygon(0% 5%, 100% 30%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 5%, 100% 15%, 100% 100%, 0 100%);
+
+   
+    /* padding-bottom: 20px; */
+}
+
+.bs {
+    background-color: transparent;
+    color: black;
+    padding-top: 25px;
+ 
+
+}
+.bb{
+    border: 2px solid none;
+    margin: 10px;
+    background-color: white;
+}
+.fs{
+    position: absolute;
+    top: 40px;;
+    left: 50px;
+    border: red solid 2px;
+}
+
+div li {
+    display: inline;
+}
+
+#concon{
+    color: aqua;
+    padding-left: 10px;
+}
