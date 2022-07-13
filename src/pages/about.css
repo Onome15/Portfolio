@@ -55,9 +55,6 @@ h2.lin {
     width: 40px;
     content: '';
     border-top: 3px solid #0275d8;
-
-   
-    
 }
 
 .ic {
@@ -73,7 +70,6 @@ fieldset.about {
     font-family: sans-serif;
     font-weight: 650;
     box-shadow: 7px 5px 10px rgba(220, 220, 220, 1);
-    /* box-shadow: 7px 5px 5px light#0275d8; */
     text-align: center;
     border: none;
     border-radius: 50%;
