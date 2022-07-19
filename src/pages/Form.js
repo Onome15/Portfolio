@@ -14,14 +14,13 @@ const Form = () => {
             <form action="">
                 {forms.map((form, index) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <label htmlFor={form.name}> {form.name}: <br />
                                 <input type={form.type} id={form.name} name={form.name} placeholder={form.placeholder} className='sc' /><br /><br />
                             </label><br />
                         </div>
                     )
                 })}
-
 
                 <label htmlFor="message">Message: <br /><br />
                     <textarea id="message" name="message" placeholder="Write something.." ></textarea>
