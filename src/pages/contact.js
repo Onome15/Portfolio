@@ -7,7 +7,7 @@ import { BsTelephoneInbound } from "react-icons/bs";
 import { VscMail } from "react-icons/vsc";
 import { TiSocialTwitter } from "react-icons/ti";
 import { FaFacebookF } from "react-icons/fa";
-import { RiLinkedinBoxFill, RiLinksFill } from "react-icons/ri";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { AiFillGithub } from "react-icons/ai";
 
 const contact = [
