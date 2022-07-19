@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './portfolio.module.css'
 import { Carousel, Card, Container, Col, Row } from 'react-bootstrap';
-import mall from './phone_mall.png'
-import crypto from './crypto_news.png'
-import talentnest from './talentnest.png'
-import calculator from './calculator.png'
-import portfolio from './portfolio.png'
-import cgpa from './cgpacalc.png'
+import mall from  '../Images/phone_mall.png'
+import crypto from '../Images/crypto_news.png'
+import talentnest from  '../Images/talentnest.png'
+import calculator from  '../Images/calculator.png'
+import portfolio from  '../Images/portfolio.png'
+import cgpa from  '../Images/cgpacalc.png'
 import { GoEye } from "react-icons/go";
 import { AiFillGithub } from 'react-icons/ai';
 
