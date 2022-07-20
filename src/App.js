@@ -7,10 +7,14 @@ import Home from "./pages/Home";
 import { ImMenu3 } from "react-icons/im";
 import { CgCloseR } from "react-icons/cg";
 import { IoIosArrowUp } from "react-icons/io";
-import { BsMoon } from "react-icons/bs";
-import { BsMoonFill } from "react-icons/bs";
 import { HashLink as Lin } from 'react-router-hash-link';
 
+const Menu = [
+  { to: "/#about", title: "About", },
+  { to: "/#portfolio", title: "Portfolio", },
+  { to: "/#contact", title: "Contact",  },
+  { to: "/blog", title: "Blog",  },
+]
 
 const App = (props) => {
   const joesno = 'Joe';
@@ -20,8 +24,7 @@ const App = (props) => {
   const hide = () => setCancel(false);
   const [mode, setMode] = useState(false);
   if (mode === true) {
-console.log('hello world');
-    
+    console.log('hello world');
   }
 
   return (
@@ -37,18 +40,13 @@ console.log('hello world');
               {cancel ? <CgCloseR color='hsla(220, 100%, 60%, 1)' size={40} /> : <ImMenu3 color='hsla(220, 100%, 60%, 1)' size={40} />} </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
               <Nav onClick={() => { setExpanded(false); toggle(); hide() }}>
-                <span className='linke linkz'>
-                  <Nav.Link as={Lin} smooth to='/#about' id='font'>About </Nav.Link>
-                </span>
-                <span className='linke linkz'>
-                  <Nav.Link as={Lin} smooth to='/#portfolio' id='font'>Portfolio </Nav.Link>
-                </span>
-                <span className='linke linkz'>
-                  <Nav.Link as={Lin} smooth to='/#contact'  id='font'>Contact </Nav.Link>
-                </span>
-                <span className='linke linkz'>
-                  <Nav.Link as={Link} to='/blog' id='font'>Blog </Nav.Link>
-                </span>
+                {Menu.map((menu, index) => {
+                  return(
+                    <span className='linke linkz' key={index}>
+                    <Nav.Link as={Lin} smooth to={menu.to} id='font'>{menu.title}</Nav.Link>
+                  </span>
+                  )
+                })}
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -59,35 +57,12 @@ console.log('hello world');
               <IoIosArrowUp size={35} />
             </span>
           </Lin>
-          <span className='mode' onClick={() => setMode(mode ? false : true)}>
-            {mode  ? <BsMoon size={32}/> :  <BsMoonFill color='black' size={32}  />}
-          </span>
         </div>
-        {/* <div>
-        <Home />
-          <About />
-          <Portfolio />
-         <Contact />
-        </div> */}
         <div onClick={() => { setExpanded(false); toggle(); hide() }}>
-        {/*  <Routes>
-           
-            <Route path="contact" element={<Contact />} />
-          </Routes> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="blog" element={<Blog />} />
-            {/* <Route render={() => <Navigate to="/" />} /> */}
-             {/* <Route path='about' element={<About />} />
-           
-            <Route path='portfolio' element={<Portfolio />} />
-           
-             <Route path="contact" element={<Contact />} /> */}
           </Routes>
-
-          {/* <span className='linke'>
-      <Nav.Link as ={Link} to ='/' id='font'>Home </Nav.Link>
-      </span> */}
         </div>
       </div>
     </BrowserRouter>

@@ -23,7 +23,6 @@ const Home = () => {
       loop: true,
       loopCount: Infinity,
     };
-
     //elRef refers to the < span > rendered below
     typed.current = new Typed(el.current, options);
 
