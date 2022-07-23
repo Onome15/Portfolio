@@ -6,24 +6,25 @@ import crypto from '../Images/crypto_news.png'
 import talentnest from  '../Images/talentnest.png'
 import calculator from  '../Images/calculator.png'
 import portfolio from  '../Images/portfolio.png'
+import avatar from  '../Images/avatar.png'
+import man from  '../Images/man.png'
 import cgpa from  '../Images/cgpacalc.png'
 import { GoEye } from "react-icons/go";
 import { AiFillGithub } from 'react-icons/ai';
 
 const projects = [
   { image: mall, title: "Phone Ecommerce", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Phone-mall", href: 'https://phone-mall.netlify.app/', id: 1 },
-  { image: crypto, title: "Crypto News", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Phone-mall", href: 'https://github.com/Onome15', id: 2 },
+  { image: crypto, title: "Crypto News", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Crypto-Update", href: 'https://crypto-news-bay.vercel.app/', id: 2 },
   { image: talentnest, title: "TalentNest", about: "Nextjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/TalentNest", href: 'https://talentnestjoe.netlify.app/', id: 3 },
   { image: portfolio, title: "Portfolio", about: "Reactjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/Portfolio", href: 'https://joetechon.netlify.app/', id: "4" },
-  { image: calculator, title: "A Simple Calculator", about: "Reactjs | CSS", githubView: "https://github.com/Onome15/Portfolio", href: 'https://joesimplecalc.netlify.app/', id: "5" },
+  { image: calculator, title: "A Simple Calculator", about: "Reactjs | CSS", githubView: "https://github.com/Onome15", href: 'https://joesimplecalc.netlify.app/', id: "5" },
   { image: cgpa, title: "CGPA Calculator", about: "Vanilla Javascript | CSS", githubView: "https://github.com/Onome15/CGPA-Calculator", href: 'https://joecgpacalc.netlify.app/', id: "6" },
 ];
 
 const testimonials = [
-  { name: "Samiroje Yoma", image: portfolio, comment: "loremsdfsi", interval: 1000, },
-  { name: "Ansel Omamuyovwi", image: cgpa, comment: "Hellefdszs", interval: 3000, },
-  { name: "William Francisca", image: mall, comment: "Helfvsds", interval: 500, },
-];
+  { name: "Samiroje Yoma", image: man, comment: "Joe was a real pleasure to work with and we look forward to working with him again.", interval: 4000, },
+  { name: "Ansel Omamuyovwi", image: avatar, comment: "He's definitely the kind of developer you can trust with a project.", interval: 3000, },
+ ];
 
 const Portfolio = () => {
   return (
@@ -71,7 +72,7 @@ const Portfolio = () => {
                     <Card.Img variant="top" src={testimonials.image} className={styles.img} alt='My photo' />
                     <Card.Body style={{ textAlign: 'center', fontSize: '70%' }}>
                       <Card.Subtitle>
-                        {testimonials.comment}
+                        "{testimonials.comment}"
                       </Card.Subtitle> <br />
                       <Card.Title>-{testimonials.name}</Card.Title>
                     </Card.Body>

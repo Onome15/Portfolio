@@ -17,7 +17,7 @@ const Menu = [
 ]
 
 const App = (props) => {
-  const joesno = 'Joe';
+  const joesno = 'JoeTechOn';
   const [expanded, setExpanded] = useState(false);
   const [cancel, setCancel] = useState(false);
   const toggle = () => setCancel(!cancel);
