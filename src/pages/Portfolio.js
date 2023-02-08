@@ -13,12 +13,12 @@ import { GoEye } from "react-icons/go";
 import { AiFillGithub } from 'react-icons/ai';
 
 const projects = [
-  { image: mall, title: "Phone Ecommerce", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Phone-mall", href: 'https://phone-mall.netlify.app/', id: 1 },
-  { image: crypto, title: "Crypto News", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Crypto-Update", href: 'https://crypto-news-bay.vercel.app/', id: 2 },
-  { image: talentnest, title: "TalentNest", about: "Nextjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/TalentNest", href: 'https://talentnestjoe.netlify.app/', id: 3 },
-  { image: portfolio, title: "Portfolio", about: "Reactjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/Portfolio", href: 'https://joetechon.netlify.app/', id: "4" },
-  { image: calculator, title: "A Simple Calculator", about: "Reactjs | CSS", githubView: "https://github.com/Onome15", href: 'https://joesimplecalc.netlify.app/', id: "5" },
-  { image: cgpa, title: "CGPA Calculator", about: "Vanilla Javascript | CSS", githubView: "https://github.com/Onome15/CGPA-Calculator", href: 'https://joecgpacalc.netlify.app/', id: "6" },
+  { image: mall, title: "Phone Ecommerce", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Phone-mall", href: 'https://phone-mall.netlify.app/', },
+  { image: crypto, title: "Crypto News", about: " Nextjs | Tailwindcss", githubView: "https://github.com/Onome15/Crypto-Update", href: 'https://crypto-news-bay.vercel.app/', },
+  { image: talentnest, title: "TalentNest", about: "Nextjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/TalentNest", href: 'https://talentnestjoe.netlify.app/', },
+  { image: portfolio, title: "Portfolio", about: "Reactjs | Bootstrap | CSS", githubView: "https://github.com/Onome15/Portfolio", href: 'https://joetechon.netlify.app/',  },
+  { image: calculator, title: "A Simple Calculator", about: "Reactjs | CSS", githubView: "https://github.com/Onome15", href: 'https://joesimplecalc.netlify.app/', },
+  { image: cgpa, title: "CGPA Calculator", about: "Vanilla Javascript | CSS", githubView: "https://github.com/Onome15/CGPA-Calculator", href: 'https://joecgpacalc.netlify.app/', },
 ];
 
 const testimonials = [
